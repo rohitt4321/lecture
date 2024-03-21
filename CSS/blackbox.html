@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 500;
+        }
+
+        .navbar-brand {
+            padding: 0 1rem;
+        }
+
+        .navbar-burger {
+            display: none;
+        }
+
+        .navbar-menu {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#" class="navbar-item">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <button class="navbar-burger" id="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="navbar-menu" id="navbar-menu">
+            <div class="navbar-start">
+                <a href="#" class="navbar-item">Home</a>
+                <a href="#" class="navbar-item">Features</a>
+                <a href="#" class="navbar-item">Pricing</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="#" class="button is-primary">Sign Up</a>
+                        <a href="#" class="button is-light">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

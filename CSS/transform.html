@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            margin: auto;
+
+            /* origin position select  */
+            /* transform-origin: bottom right ; */
+
+            /* Rotate in value deg */
+
+            /* transform: rotate(20deg); */
+
+            /* transform x,y and Deg Working  */
+            /* transform: skewX(30deg); */
+            /* transform: skewY(30deg); */
+            /* transform: skew(30deg, 45deg); */
+
+            /* width 2 time dubble */
+            /* transform: scale(2); */
+            /* transform: scaleX(3); */
+            /* transform: scaleY(2); */
+            /* 
+            transform: matrix(scalex(),skewy(),skewx(),scaley() translatex(),translatey()); */
+            /* transform: matrix(1,1.4,1.4,0,20,30); */
+
+
+
+
+
+        }
+
+        /* .perents{
+            width: 300px ;
+            height: 300px ;
+            background-color: orange;
+            margin: auto;
+            perspective: 800px;
+            transform: rotateY(30deg);
+            transform-style:preserve-3d ;
+        }
+        .child{
+            width: 300px ;
+            height: 300px ;
+            background-color: rgb(0, 255, 85);
+            margin: auto;
+            transform: rotateX(60deg)
+        } */
+        .perents {
+            width: 300px;
+            height: 300px;
+            background-color: grey;
+            margin: auto;
+            perspective: 800px;
+            perspective-origin: left top;
+        }
+
+        .child {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(221, 72, 72);
+            /* transform: rotateX(60deg); */
+
+
+            transform-origin: right center;
+            transform: rotateY(269deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni vitae iste, quo at sequi qui a odit alias labore
+        reprehenderit unde earum exercitationem aperiam quas dolore aliquam quaerat sed incidunt quis. Veniam fugit
+        aspernatur eligendi modi temporibus, quaerat accusamus libero fugiat tenetur maxime et, aperiam iure debitis
+        assumenda reiciendis deleniti perferendis illo non natus quo voluptatem in. Vero modi porro quo facilis sed,
+        similique voluptate laborum iste, doloribus recusandae illo dolorum natus numquam, mollitia explicabo quae!
+        Tempora officiis nostrum, minus delectus ad assumenda voluptatum fuga labore sit beatae, eum voluptatibus porro
+        vitae exercitationem, repudiandae ex fugiat in nam dolorum. Accusamus!</p>
+
+
+
+
+    <div class="perents">
+        <div class="child">
+
+        </div>
+        <div class="chlid2">
+
+        </div>
+
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni vitae iste, quo at sequi qui a odit alias labore
+        reprehenderit unde earum exercitationem aperiam quas dolore aliquam quaerat sed incidunt quis. Veniam fugit
+        aspernatur eligendi modi temporibus, quaerat accusamus libero fugiat tenetur maxime et, aperiam iure debitis
+        assumenda reiciendis deleniti perferendis illo non natus quo voluptatem in. Vero modi porro quo facilis sed,
+        similique voluptate laborum iste, doloribus recusandae illo dolorum natus numquam, mollitia explicabo quae!
+        Tempora officiis nostrum, minus delectus ad assumenda voluptatum fuga labore sit beatae, eum voluptatibus porro
+        vitae exercitationem, repudiandae ex fugiat in nam dolorum. Accusamus!</p>
+
+    <div class="box">
+        <h3>Transform</h3>
+
+    </div>
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni vitae iste, quo at sequi qui a odit alias labore
+        reprehenderit unde earum exercitationem aperiam quas dolore aliquam quaerat sed incidunt quis. Veniam fugit
+        aspernatur eligendi modi temporibus, quaerat accusamus libero fugiat tenetur maxime et, aperiam iure debitis
+        assumenda reiciendis deleniti perferendis illo non natus quo voluptatem in. Vero modi porro quo facilis sed,
+        similique voluptate laborum iste, doloribus recusandae illo dolorum natus numquam, mollitia explicabo quae!
+        Tempora officiis nostrum, minus delectus ad assumenda voluptatum fuga labore sit beatae, eum voluptatibus porro
+        vitae exercitationem, repudiandae ex fugiat in nam dolorum. Accusamus!</p>
+    <style>
+        .pers500 {
+            perspective: 500px;
+        }
+
+        .container {
+            width: 200px;
+            height: 200px;
+            margin: 75px 0 0 75px;
+            border: none;
+        }
+
+        .cube {
+            width: 100%;
+            height: 100%;
+            perspective-origin: 150% 150%;
+            transform-style: preserve-3d;
+        }
+
+        .face {
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: none;
+            line-height: 100px;
+            font-family: sans-serif;
+            font-size: 60px;
+            color: white;
+            text-align: center;
+           
+        }
+
+        /* Define each face based on direction */
+        .front {
+            background: rgb(0 0 0 / 30%);
+            transform: translateZ(50px);
+        }
+
+        .back {
+            background: rgb(0 255 0 / 100%);
+            color: black;
+            transform: rotateY(180deg) translateZ(50px);
+        }
+
+        .right {
+            background: rgb(196 0 0 / 70%);
+            transform: rotateY(90deg) translateZ(50px);
+        }
+
+        .left {
+            background: rgb(0 0 196 / 70%);
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+
+        .top {
+            background: rgb(196 196 0 / 70%);
+            transform: rotateX(90deg) translateZ(50px);
+        }
+
+        .bottom {
+            background: rgb(196 0 196 / 70%);
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+    </style>
+
+
+    <div class="container">
+        <div class="cube pers500">
+            <div class="face front">1</div>
+            <div class="face back">2</div>
+            <div class="face right">3</div>
+            <div class="face left">4</div>
+            <div class="face top">5</div>
+            <div class="face bottom">6</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
